@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Unlimited Access Banner</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="viewport">
+      <!-- Background -->
+      <div class="bg">
+        <img src="./images/bg.png" alt="Background" />
+      </div>
+
+      <div class="content">
+        <!-- Status bar -->
+        <div class="status-bar">
+          <div class="left-side">9:41</div>
+          <div class="right-side">
+            <img src="./images/tell.png" alt="Connection" />
+            <img src="./images/Wifi.png" alt="Wifi" />
+            <img src="./images/Battery.png" alt="Battery" />
+          </div>
+        </div>
+
+        <!-- Top row -->
+        <div class="top-row">
+          <a href="#" class="link-btn close">✕</a>
+        </div>
+
+        <!-- Title -->
+        <div class="title-block">
+          <h1 class="title" data-text="Get Unlimited <br>Access"></h1>
+        </div>
+
+        <!-- Feature cards -->
+        <div class="cards">
+          <div class="card">
+            <img src="./images/1card.png" alt="Unlimited Art" />
+            <div class="card-title" data-text="Unlimited Art <br>Creation"></div>
+          </div>
+          <div class="card">
+            <img src="./images/2card.png" alt="Exclusive" />
+            <div class="card-title" data-text="Exclusive <br>Styles"></div>
+          </div>
+          <div class="card">
+            <img src="./images/3card.png" alt="Magic Avatars" />
+            <div class="card-title" data-text="Magic Avatars <br>With 20% Off"></div>
+          </div>
+        </div>
+
+        <!-- Plans -->
+        <div class="plans">
+          <!-- Yearly plan -->
+          <div class="plan yearly">
+            <div class="plan-left">
+              <span class="plan-title" data-text="YEARLY ACCESS"></span>
+              <span class="price" data-text="Just {{price}} per year"></span>
+            </div>
+            <div class="plan-right">
+              <span class="badge" data-text="BEST OFFER"></span>
+              <div class="subprice-col">
+                <span class="subprice-big">$0.48</span>
+                <span class="subprice-small" data-text="{{price}} <br>per week"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weekly plan -->
+          <div class="plan weekly">
+            <div class="plan-left">
+              <span class="plan-title" data-text="WEEKLY ACCESS"></span>
+            </div>
+            <div class="plan-right">
+              <div class="subprice-col">
+                <span class="subprice-big">$6.99</span>
+                <span class="subprice-small" data-text="{{price}} <br>per week"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Continue button -->
+        <a href="https://apple.com/" class="btn btn-primary" data-text="Continue"></a>
+
+        <!-- Footer links -->
+        <div class="small-row">
+          <a href="#" data-text="Terms of Use"></a>
+          <a href="#" data-text="Privacy Policy"></a>
+          <a href="#" data-text="Restore"></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
