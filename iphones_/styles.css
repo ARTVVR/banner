@@ -29,7 +29,6 @@ padding: 0 10px;
 .viewport {
   position: relative;
   width: 390px;
-  height: auto;
   margin: 0 auto;
   border-radius: 16px;
   background: var(--bg-gradient);
@@ -290,3 +289,143 @@ padding: 0 10px;
 .yearly:hover::before {
   width: 0;
 }
+
+
+@media (max-width: 430px) {
+  .title-block{
+    margin-top: 140px;
+  }
+  .viewport {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .content {
+    padding: 4vh 5vw;
+  }
+
+  .title-block .title {
+    font-size: clamp(1.8rem, 6vw, 2.3rem);
+    line-height: 1.2;
+  }
+
+  .cards {
+    gap: 2vw;
+  }
+
+  .card {
+    width: 30%;
+    max-width: 32%;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .card-title {
+    font-size: clamp(0.7rem, 2.5vw, 0.9rem);
+  }
+
+  .plans {
+    gap: 1rem;
+    margin-top: 3vh;
+  }
+
+  .plan {
+    padding: 1rem 1.2rem;
+    border-radius: 40px;
+  }
+
+  .btn-primary {
+    width: 85%;
+    height: 52px;
+    line-height: 52px;
+    font-size: clamp(1rem, 3.5vw, 1.1rem);
+  }
+
+  .small-row {
+    font-size: clamp(0.65rem, 2vw, 0.8rem);
+  }
+}
+
+/* iPhone SE / 8 / 8+ — немного уменьшаем контент и поднимаем фон */
+@media (max-width: 380px) {
+  .bg img {
+    transform: translateY(-5%);
+  }
+
+  .title-block {
+    margin-top: 8vh;
+  }
+
+  .title-block .title {
+    font-size: 1.8rem;
+  }
+
+  .cards {
+    gap: 3vw;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .card img {
+    transform: scale(0.95);
+  }
+
+  .plan {
+    padding: 0.9rem 1rem;
+  }
+
+  .btn-primary {
+    height: 48px;
+    line-height: 48px;
+  }
+}
+
+/* Очень узкие экраны (например, iPhone SE старого поколения) */
+@media (max-width: 340px) {
+  .title-block {
+    margin-top: 6vh;
+  }
+
+  .title-block .title {
+    font-size: 1.6rem;
+  }
+
+  .card img {
+    transform: scale(0.9);
+  }
+
+  .plan {
+    padding: 0.8rem 0.9rem;
+  }
+
+  .btn-primary {
+    width: 90%;
+    font-size: 0.95rem;
+  }
+}
+
+/* iPhone 12 / X — немного увеличиваем отступы */
+@media (min-width: 410px) and (max-width: 440px) {
+  .content {
+    padding: 5vh 6vw;
+  }
+
+  .title-block {
+    margin-top: 12vh;
+  }
+
+  .title-block .title {
+    font-size: 2.4rem;
+  }
+
+  .btn-primary {
+    max-width: 360px;
+  }
+}
+
